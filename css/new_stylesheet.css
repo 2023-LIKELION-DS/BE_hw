@@ -9,7 +9,6 @@ body {
 }
 
 /* 나브 바 */
-
 a:link,
 a:visited {
   text-decoration: none;
@@ -54,7 +53,7 @@ ul.nav-btn > li {
   font-size: 25px;
   margin-top: 10px;
 }
-/* 헤더 */
+
 /* 헤더 */
 .hd {
   position: relative;
@@ -102,24 +101,22 @@ ul.nav-btn > li {
   background-repeat: no-repeat;
 }
 
-.hd .container {
+.hd,
+.container {
   position: relative;
 }
 
 /* section */
-
 h3 {
   color: #ffff1b;
   font-size: 70px;
   padding: 350px 50px 50px 0;
-  /* float: left; */
   width: 960px;
 }
 
 .sec {
-  /* text-align: left; */
   padding: 100px 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0); /* 배경색상 */
 }
 
 /* .sec article { */
@@ -129,7 +126,14 @@ h3 {
   padding-bottom: 100px;
 }
 
-.artc .contact-img {
+.artc,
+.contact-img {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.artc,
+.contact-text {
   color: rgb(255, 255, 255);
   font-size: 20px;
   padding-bottom: 20px;
@@ -145,85 +149,76 @@ h3 {
   height: 100%;
 }
 .card-img {
-  /* overflow: hidden; */
   height: 300px;
   width: 300px;
 }
-/* .sec::after {
-  content: '';
-  /* display: block; */
-/* clear: both; */
-/* } */
 
-/* 왼쪽 오른쪽 번갈아 띄우기 */
-
-.prof-block {
-  /* float: left; */
-  /* display: inline-block; */
-  /* display: flex; */
-
-  /* width: 90px; */
-}
-/* .prof-block::after {
-  content: '';
-  display: block;
-  clear: both;
-} */
-
-.card-img-a {
-  /* display: inline-block; */
-  /* flex: none; */
-}
-
-.prof-block-text {
-  /* display: inline-block; */
-  /* flex: 0; */
-  /* width: 100px; */
-  /* float: left; */
-}
-
-/* .skill-block { */
-/* float: right; */
-/* width: 960px; */
-/* } */
-.contact-block {
-  /* float: left; */
-  /* width: 960px; */
-}
+.prof-block,
+.skill-block,
+.contact-block,
 .work-block {
-  /* float: right; */
-  /* width: 960px; */
-}
-/* flex이용해서 가로배치 해보기 */
-/* .container-s {
-  position: relative;
-} */
-
-.prof-block {
   display: flex;
-}
-.artc {
-  display: flex;
+  margin-bottom: 100px;
 }
 
-.card-img-a .card-img-b {
+.card-img-a,
+.card-img-b,
+.card-img-c,
+.card-img-d {
   flex: none;
   min-width: 300px;
 }
 
-.prof-block-text {
+.prof-block-text,
+.skill-block-text,
+.contact-block-text {
   flex: none;
-  margin: 50px 10px 0 50px;
+  margin: 0px 10px 0 50px;
   min-width: 100px;
 }
 
-/* .card-img-b {
+.work-block-text {
   flex: none;
-  min-width: 300px;
-} */
-
-/* .skill-block-text {
-  flex: none;
-  margin: 50px 10px 0 50px;
+  margin: 0px 10px 500px 50px;
   min-width: 100px;
-} */
+}
+
+.white-text,
+.work-text-style {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.h4 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* contact 부분 3개, 3개씩 2란으로 만들기 */
+.link {
+  display: flex;
+}
+.link-a {
+  flex: none;
+  min-width: 110px;
+}
+.link-b {
+  flex: none;
+  min-width: 90px;
+  padding-left: 50px;
+}
+
+/* footer */
+.ft {
+  padding: 15px;
+  text-align: center;
+  background-color: #ffff1b;
+}
+
+.ft-text-a {
+  font-weight: 800;
+}
