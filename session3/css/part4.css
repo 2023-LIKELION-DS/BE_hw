@@ -1,0 +1,42 @@
+.line3 {
+    border-top: 1px solid #747474;
+    margin: 30px auto;
+    width: 900px;
+    position: relative;
+    left: 50px; top:1000px;
+} 
+
+.contactT{
+    text-align: center;
+    position: absolute;
+    left: 940px; top:1450px;
+    font-size: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.contact1{
+    position: absolute;
+    left: 620px; top:1600px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contact1 .instagram{
+    width: 10%;
+}
+
+.contact2{
+    position: absolute;
+    left: 970px; top:1600px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contact2 .github{
+    width: 11%;
+}
+
+.contact3{
+    position: absolute;
+    left: 1320px; top:1600px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contact3 .blog{
+    width: 12%;
+}

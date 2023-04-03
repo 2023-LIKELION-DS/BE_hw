@@ -1,0 +1,30 @@
+/*이름*/
+.introduce {   
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.myImg{
+    position: absolute;
+    width: 18%;
+    left: 600px; top:120px;
+}
+h6 {
+    position: absolute;
+    left: 1000px; top:120px;
+    font-size: 15px;
+}
+h1 {
+    position: absolute;
+    left: 1000px; top:120px;
+    font-size: 60px;
+}
+
+/*세부 소개*/
+.container { 
+    position: absolute;
+    left: 1050px; top:300px;
+    text-align: center;
+    line-height: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
