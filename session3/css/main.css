@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tillana:wght@400&display=swap");
+
+* {
+  font-family: "Raleway";
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900px;
+}
+
+.me-img {
+  float: center;
+  margin-top: 50px;
+  width: 230px;
+  height: 290px;
+  border-radius: 5%;
+}
+
+.contend-box {
+  border-top: 1.3px solid #404042;
+  margin: 80px auto;
+  width: 320px;
+  white-space: nowrap;
+}
+
+#start {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: "Tillana", cursive;
+  margin-top: 60px;
+  width: 280px;
+  border: #000000 2.5px dashed;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.aboutme-box {
+  text-align: justify;
+  line-height: 34px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.activity-box {
+  line-height: 34px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.say-box {
+  line-height: 34px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.python-img {
+  margin-top: 35px;
+  margin-right: 12px;
+  width: 70px;
+  height: 75px;
+}
+
+.c-img {
+  margin-right: 10px;
+  width: 60px;
+  height: 75px;
+}
+
+.html-img {
+  margin-right: 8px;
+  width: 85px;
+  height: 78px;
+}
+
+.git-img {
+  width: 78px;
+  height: 78px;
+}
+
+.sns-img {
+  margin-top: 30px;
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.blinking {
+  -webkit-animation: blink 1.5s ease-in-out infinite alternate;
+  -moz-animation: blink 1.5s ease-in-out infinite alternate;
+  animation: blink 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
