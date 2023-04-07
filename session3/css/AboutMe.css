@@ -1,0 +1,49 @@
+.bgcolor {
+    background-color: rgb(255, 249, 249);
+} 
+header{
+    background-image: url(/BE_hw/session3/img/상단부배경.png);
+    text-align: center; padding: 100px;
+    color: rgb(223, 12, 93);
+}
+.introduce{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(248, 209, 209);
+}
+.introduce .hello{
+    font-size: 25px;
+}
+
+.AboutMe, .Contact, .TMI, .Photo{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgb(214, 89, 114);
+    font-size: 20px;
+    text-align: center;
+}
+.Me, .Tell{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.favorite{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+.text{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    color: rgb(232, 128, 163);
+}
+
+
+.Img1{
+    margin-left: 300px;
+    width: 15%;
+}
+.Img2{
+    width: 20%;
+}
+.Img3{
+    width: 20%;
+}
