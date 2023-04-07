@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/* 나브 바 */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  height: 80px;
+  background-color: #ffff1b;
+  line-height: 80px;
+}
+
+nav::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.nav-logo {
+  font-size: 50px;
+  float: left;
+  margin: 0;
+}
+
+.nav-menu {
+  float: right;
+}
+
+.nav-btn {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.nav-btn > li {
+  float: left;
+  margin-left: 20px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+/* 헤더 */
+.hd {
+  position: relative;
+  height: 600px;
+  text-align: center;
+}
+
+.hd-title {
+  font-size: 150px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  color: rgb(255, 255, 255);
+}
+
+.hd-content::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 1fr;
+  height: 8%;
+  opacity: 0.3; /* 불투명도 */
+  background-color: rgb(71, 71, 51);
+}
+.hd-content {
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+
+.hd::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9; /* 불투명도 */
+  background-image: url(../img/nike.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hd,
+.container {
+  position: relative;
+}
+
+/* section */
+h3 {
+  color: #ffff1b;
+  font-size: 70px;
+  padding: 350px 50px 50px 0;
+  width: 960px;
+}
+
+.sec {
+  padding: 100px 0;
+  background-color: rgb(0, 0, 0); /* 배경색상 */
+}
+
+/* .sec article { */
+.artc {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-bottom: 100px;
+}
+
+.artc,
+.contact-img {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.artc,
+.contact-text {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+}
+
+/* article 태그 안에 첨부한 img 크기 조정*/
+.sec article img {
+  width: 100%;
+  height: 100%;
+}
+.card-img {
+  height: 300px;
+  width: 300px;
+}
+
+.prof-block,
+.skill-block,
+.contact-block,
+.work-block {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.card-img-a,
+.card-img-b,
+.card-img-c,
+.card-img-d {
+  flex: none;
+  min-width: 300px;
+}
+
+.prof-block-text,
+.skill-block-text,
+.contact-block-text {
+  flex: none;
+  margin: 0px 10px 0 50px;
+  min-width: 100px;
+}
+
+.work-block-text {
+  flex: none;
+  margin: 0px 10px 500px 50px;
+  min-width: 100px;
+}
+
+.white-text,
+.work-text-style {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.h4 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* contact 부분 3개, 3개씩 2란으로 만들기 */
+.link {
+  display: flex;
+}
+.link-a {
+  flex: none;
+  min-width: 110px;
+}
+.link-b {
+  flex: none;
+  min-width: 90px;
+  padding-left: 50px;
+}
+
+/* footer */
+.ft {
+  padding: 15px;
+  text-align: center;
+  background-color: #ffff1b;
+}
+
+.ft-text-a {
+  font-weight: 800;
+}
