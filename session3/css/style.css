@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  font-family: "Single Day", cursive;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.white-container {
+  display: inline-block;
+  background-color: pink;
+  border-radius: 20px;
+  padding: 10px;
+  width: fit-content;
+  height: auto;
+  display: grid;
+  grid-template-columns: 300px 670px 300px;
+  grid-template-rows: 50px auto;
+  column-gap: 10px;
+  margin: 80px auto;
+}
+
+.divtoday {
+  height: 24px;
+}
+
+.today,
+.title {
+  vertical-align: baseline;
+  margin-bottom: 0;
+}
+.today {
+  font-size: small;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: xx-large;
+  height: fit-content;
+}
+
+.first-container,
+.second-container {
+  border-radius: 20px;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+.second-container {
+  width: 670px;
+}
+
+.f-1 {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.img-container > img {
+  width: 250px;
+}
+
+.lyrics {
+  display: inline-block;
+  text-align: end;
+  color: orange;
+}
+
+.f-2 {
+  width: 250px;
+  margin: auto;
+}
+
+.name {
+  margin-bottom: 0px;
+}
+
+.email {
+  margin-top: 0px;
+  color: orange;
+}
+
+.check {
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.feel {
+  text-align: center;
+  margin: 10px auto;
+  width: 250px;
+  border: 1px solid gray;
+}
+
+/* .feel {
+  justify-items: center;
+  display: inline-block;
+  border: 2px solid gray;
+  border-radius: 3%;
+} */
+
+.flex1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.news,
+.lang,
+.miniroom {
+  color: deepskyblue;
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 200px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+hr {
+  margin-top: 0px;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 50px auto;
+}
+
+.miniroomimg {
+  text-align: center;
+}
+.miniroomimg > img {
+  width: 500px;
+}
+
+.music {
+  display: inline-block;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: fit-content;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.music > img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+.music > audio {
+  display: inline-block;
+}
