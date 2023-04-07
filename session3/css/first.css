@@ -1,0 +1,234 @@
+/* nav영상 참고*/
+
+body {
+  font-size: 20px;
+  font-family: "Black Han Sans", sans-serif;
+  font-family: "Stylish", sans-serif;
+  padding: 0px;
+}
+
+hr {
+  border: 5px outset rgb(122, 181, 146);
+  width: 90%;
+}
+
+h3 {
+  margin-left: 100px;
+}
+span {
+  color: rgb(122, 181, 146);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+dt {
+  font-size: 30px;
+  color: rgb(122, 181, 146);
+}
+
+.container {
+  /*container 속성*/
+  width: 1000px; /*내용이 960픽셀을 차지하도록*/
+  margin: 0 auto; /*텍스트 가운데로 모음
+}
+
+nav {
+  height: 80px;
+  line-height: 80px; /*줄간격 세팅, 좀 아래로 내려오게 함*/
+}
+
+.nav-logo {
+  /*왼쪽으로 띄움*/
+  font-size: 50px;
+  float: left;
+  margin: 0;
+}
+
+.nav-menu {
+  /*오른쪽으로 보냄*/
+  float: right;
+}
+
+.nav-btn {
+  list-style-type: none; /*리스트에 별도의 타입 주지 않음*/
+  margin: 0; /*불필요한 간격 없앰*/
+}
+
+ul.nav-btn > li {
+  float: left;
+  margin-left: 25px; /*간격조절*/
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.my_nav::after {
+  content: "";
+  clear: left; /*따라오지 않게 무력화시킴*/
+  display: block;
+}
+
+.middle {
+  margin-top: 100px;
+  width: 800px; /*가운데 정렬을 하려면 width 설정해야 함*/
+  margin: 0 auto;
+}
+
+.up {
+  float: left;
+}
+
+.text-left {
+  float: left;
+  margin-left: 50px;
+}
+
+/*왜 무력화를 못 시키지?*/
+
+/*이게 없으면 오류나는데 왜???*/
+
+.background-img {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(122, 181, 146);
+  margin-bottom: 100px;
+}
+
+.edu_table {
+  width: 700px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: rgb(223, 232, 230);
+}
+
+.enter {
+  content: "";
+  clear: left; /*따라오지 않게 무력화시킴*/
+  display: block;
+}
+
+.skill-page {
+  width: 1015px;
+  margin: 0 auto;
+}
+
+.python-icon,
+.python-skill,
+.html-icon,
+.html-skill,
+.c-icon {
+  float: left;
+  margin-right: 30px; /*가운데 정렬 해주는 방법 따로 없나..*/
+}
+
+.c-skill {
+  float: left;
+  margin: 0;
+}
+
+.main-skill {
+  margin: 0 auto;
+}
+
+.skill-page::after {
+  clear: both;
+}
+
+.main-skill::after {
+  content: "";
+  clear: both; /*따라오지 않게 무력화시킴*/
+  display: block;
+}
+
+.me1 {
+  float: left;
+  margin-right: 20px;
+}
+.first-line {
+  clear: left;
+}
+
+.me2 {
+  float: left;
+  margin-right: 20px;
+}
+
+.second-line {
+  clear: left;
+}
+
+.myimg {
+  float: left;
+}
+
+.me-v {
+  float: right;
+}
+
+.all-img {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.all-img::after {
+  content: "";
+  clear: both; /*따라오지 않게 무력화시킴*/
+  display: block;
+}
+
+/*margin: 0 auto를 쓰려면 width가 정의되어야 함*/
+
+.tmi {
+  margin-left: 300px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.broken,
+.flower,
+.dice {
+  float: left;
+  margin-right: 15px;
+}
+
+.the_drum {
+  float: left;
+  margin: 0px;
+}
+
+.youtube_img {
+  width: 1000px; /*왜 900이면 안 되지*/
+  margin: 0 auto;
+}
+
+.youtube_img::after {
+  clear: left; /*따라오지 않게 무력화시킴*/
+}
+
+.broken-m,
+.flower-m,
+.dice-m {
+  float: left;
+}
+
+.the_drum-m {
+  float: left;
+  margin: 0px;
+}
+
+.music_info {
+  width: 910px; /*왜 900이면 안 되지*/
+  margin: 0 auto;
+}
+
+.music_info::after {
+  content: "";
+  clear: both; /*따라오지 않게 무력화시킴*/
+  display: block;
+}
+
+.finish {
+  text-align: center;
+}
