@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; //주로 시작에서.
+}
+
+body {
+  font-family: "Gowun Batang", serif;
+  font-size: 20px;
+  background-color: #f1f1f1;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#information {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#information ul {
+  margin: 50px;
+}
+#information li {
+  text-align: center;
+  list-style-type: none;
+}
+#skills {
+  margin-bottom: 200px;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skills div {
+  flex-basis: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills div img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.skills div h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.skills div p {
+  margin-bottom: 0;
+}
+
+#aboutMe {
+  margin-bottom: 150px;
+}
+
+.exp {
+  padding-top: 50px;
+}
+.exp p {
+  text-align: center;
+  padding-top: 5px;
+}
