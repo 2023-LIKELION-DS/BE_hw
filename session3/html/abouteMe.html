@@ -25,25 +25,26 @@
             <h1 class="nav-logo"><a href="./abouteMe.html">MY PORTPOLIO</a></h1>
             <div class="nav-menu">
                 <ul class="nav-btn">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PORTPOLIO</a></li>
+                    <li><a href="#hd-title">HOME</a></li>
+                    <li><a href="#about_title">ABOUT</a></li>
+                    <li><a href="#portpolio_title">PORTPOLIO</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="hd">
         <div class="container">
-            <h2 class="hd-title">JUST DO IT</h2>
-            <!-- <img class="main_img" src="../img/nike img.png" alt="나이키 이미지 나와야 하는뒈"> -->
-            <p class="hd-content">끊임없이 도전하자, 김지민입니다.</p>
+            <h2 class="hd-title" id="hd-title">JUST DO IT</h2>
+            <p class="hd-content">
+            <div class="hd-content-text"> 끊임없이 도전하자, 김지민입니다. </div>
+            </p>
+
         </div>
     </header>
 
     <section class="sec">
         <div class="container">
-            <h3>ABOUT</h3>
-
+            <h3 id="about_title">ABOUT</h3>
             <article class="artc">
                 <div class="prof-block">
                     <div class="card-img">
@@ -51,12 +52,11 @@
                     </div>
                     <div class="prof-block-text">
                         <h4>Profile : 편식 하지 않고 다양한 분야에 학습해보기</h4>
-                        <p>
-                            <li>Name : 김지민</li>
-                            <li>Birth : 01.06.30</li>
-                            <li>Education : 덕성여자대학교</li>
-                            <li>Unique : 경영학과와 시각디자인학과 전공 학습 경험</li>
-                        </p>
+                        <li>Name : 김지민</li>
+                        <li>Birth : 01.06.30</li>
+                        <li>Education : 덕성여자대학교</li>
+                        <li>Major : 컴퓨터공학전공</li>
+                        <li>Unique : 경영학과와 시각디자인학과 전공 학습 경험</li>
                     </div>
                 </div>
             </article>
@@ -68,13 +68,12 @@
                     </div>
                     <div class="skill-block-text">
                         <h4>Skills</h4>
-                        <p>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                        </p>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>React</li>
                     </div>
                 </div>
             </article>
@@ -89,9 +88,9 @@
                         <div class="link">
                             <div class="link-a">
                                 <div class="contact-text">
-                                    <a href="https://instagram.com/_ji_minn">
+                                    <a href="https://mail.google.com/mail">
                                         <div class="white-text">
-                                            <i class="far fa-envelope">&nbsp;&nbsp;@gmail</i>
+                                            <i class="far fa-envelope">&nbsp;&nbsp;jimin326ww@gmail.com</i>
                                         </div>
                                     </a>
                                 </div>
@@ -122,7 +121,7 @@
                                 </div>
 
                                 <div class="contact-text">
-                                    <a href="https://github.com/jimin-ni">
+                                    <a href="https://www.linkedin.com/in/-jimin-kim-">
                                         <div class="white-text">
                                             <i class="fab fa-linkedin">&nbsp;&nbsp;@jimin-ni</i>
                                         </div>
@@ -142,7 +141,7 @@
                 </div>
             </article>
 
-            <h3>PORTPOLIO</h3>
+            <h3 id="portpolio_title">PORTPOLIO</h3>
             <article class="artc">
                 <div class="work-block">
                     <div class="card-img">
@@ -150,44 +149,58 @@
                     </div>
 
                     <div class="work-block-text">
-                        <h4>Work Experience</h4>
-                        <p>
-                            <li>
-                                <a href="https://github.com/jimin-ni/Up-Duk">
-                                    <div class="work-text-style">
-                                        2022년 덕성여자대학교 제1회
-                                        IT 연합 해커톤 : 기획 ·
-                                        프론트엔드
-                                    </div>
-                                </a>
-                            </li>
-                            <li><a href="http://www.dswuwis.com/">
-                                    <div class="work-text-style">
-                                        2022년 덕성여자대학교 컴퓨터공학전공 제32회 졸업전시준비위원회 : DB</div>
-                                </a></li>
-                            <li><a href="https://github.com/jimin-ni/CongRyoung2U-Front">
-                                    <div class="work-text-style">
-                                        2023년 덕성여자대학교 컴퓨터공학전공 소모임 코너 내 해커톤 : 기획 · 프론트엔드 · DB ·
-                                        시현
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://corner-ds.tistory.com/">
-                                    <div class="work-text-style">
-                                        2023년 덕성여자대학교 컴퓨터공학전공 소모임 코너 : 대외팀장</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://linktr.ee/likelion_ds/">
-                                    <div class="work-text-style">
-                                        2023년 덕성여자대학교 멋쟁이사자 11기 : 아기사자
-                                    </div>
-                                </a>
-                            </li>
-                        </p>
+                        <h4 class="work-text">Work Experience</h4>
+                        <div class="port-img">
+                            <div class="port-img-a">
+                                <li>
+                                    <a href="https://github.com/jimin-ni/Up-Duk">
+                                        <img class="port-img-1" src="../img/IT 연합 해커톤.PNG" alt="upduck">
+                                        <!-- <div class="work-text-style">
+                                            2022년 덕성여자대학교 제1회
+                                            IT 연합 해커톤 : 기획 ·
+                                            프론트엔드 -->
+                                        <!-- </div> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.dswuwis.com/">
+                                        <img class="port-img-2" src="../img/졸업전시준비위원회.PNG" alt="졸준위">
+                                        <!-- <div class="work-text-style">
+                                            2022년 덕성여자대학교 컴퓨터공학전공 제32회 졸업전시준비위원회 : DB</div> -->
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="port-img-b">
+                                <li>
+                                    <a href="https://github.com/jimin-ni/CongRyoung2U-Front">
+                                        <img class="port-img-3" src="../img/코너톤작업.png" alt="코너톤">
+                                        <!-- <div class="work-text-style">
+                                            2023년 덕성여자대학교 컴퓨터공학전공 소모임 코너 내 해커톤 : 기획 · 프론트엔드 · DB ·
+                                            시현
+                                        </div> -->
+                                    </a>
+                                </li>
+
+                            </div>
+                            <div class="port-img-c">
+                                <li>
+                                    <a href="https://corner-ds.tistory.com/">
+                                        <img class="port-img-4" src="../img/대외팀장.PNG" alt="대외팀장">
+                                        <!-- <div class="work-text-style">
+                                            2023년 덕성여자대학교 컴퓨터공학전공 소모임 코너 : 대외팀장</div> -->
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://linktr.ee/likelion_ds/">
+                                        <img class="port-img-5" src="../img/멋쟁이사자.PNG" alt="멋사">
+                                        <!-- <div class="work-text-style">
+                                            2023년 덕성여자대학교 멋쟁이사자 11기 : 아기사자
+                                        </div> -->
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </article>
         </div>
     </section>
