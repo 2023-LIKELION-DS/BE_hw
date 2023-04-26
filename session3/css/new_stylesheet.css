@@ -4,7 +4,6 @@
 
 body {
   -ms-overflow-style: none; /* 스크롤 기능o, 모양x*/
-
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -213,7 +212,7 @@ li {
   padding-top: 100px;
 }
 
-/* portpolio 부분 이미지 배치 */
+/* portfolio 부분 이미지 배치 */
 .port-img-a {
   width: 800px;
   display: flex;
