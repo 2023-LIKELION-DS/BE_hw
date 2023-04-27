@@ -2,18 +2,26 @@
 
 body {
   font-size: 20px;
-  font-family: "Black Han Sans", sans-serif;
   font-family: "Stylish", sans-serif;
   padding: 0px;
+  width: 1800px;
+  margin: 0 auto;
 }
 
 hr {
   border: 5px outset rgb(122, 181, 146);
   width: 90%;
 }
+h2 {
+  font-size: 40px;
+  margin-left: 30px;
+}
 
 h3 {
   margin-left: 100px;
+  font-size: 50px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 span {
   color: rgb(122, 181, 146);
@@ -32,12 +40,7 @@ dt {
 .container {
   /*container 속성*/
   width: 1000px; /*내용이 960픽셀을 차지하도록*/
-  margin: 0 auto; /*텍스트 가운데로 모음
-}
-
-nav {
-  height: 80px;
-  line-height: 80px; /*줄간격 세팅, 좀 아래로 내려오게 함*/
+  margin: 0 auto; /*텍스트 가운데로 모음*/
 }
 
 .nav-logo {
@@ -45,11 +48,13 @@ nav {
   font-size: 50px;
   float: left;
   margin: 0;
+  margin-top: 10px;
 }
 
 .nav-menu {
   /*오른쪽으로 보냄*/
   float: right;
+  margin-top: 20px;
 }
 
 .nav-btn {
@@ -102,6 +107,9 @@ ul.nav-btn > li {
   margin: 0 auto;
   background-color: rgb(223, 232, 230);
 }
+thead {
+  background-color: rgb(193, 219, 211);
+}
 
 .enter {
   content: "";
@@ -109,43 +117,26 @@ ul.nav-btn > li {
   display: block;
 }
 
-.skill-page {
-  width: 1015px;
-  margin: 0 auto;
+.skill_language {
+  display: flex;
+  margin: 0px;
+  justify-content: center;
 }
 
-.python-icon,
-.python-skill,
-.html-icon,
-.html-skill,
-.c-icon {
+.skill-icon,
+.skill-range {
   float: left;
-  margin-right: 30px; /*가운데 정렬 해주는 방법 따로 없나..*/
-}
+  margin-right: 30px;
+} /*전체 통일*/
 
-.c-skill {
-  float: left;
-  margin: 0;
+.skill-icon {
+  font-size: 100px;
 }
-
-.main-skill {
-  margin: 0 auto;
-}
-
-.skill-page::after {
-  clear: both;
-}
-
-.main-skill::after {
-  content: "";
-  clear: both; /*따라오지 않게 무력화시킴*/
-  display: block;
-}
-
 .me1 {
   float: left;
   margin-right: 20px;
 }
+
 .first-line {
   clear: left;
 }
@@ -182,53 +173,28 @@ ul.nav-btn > li {
 
 .tmi {
   margin-left: 300px;
-  margin-top: 30px;
-  margin-bottom: 60px;
 }
 
-.broken,
-.flower,
-.dice {
-  float: left;
-  margin-right: 15px;
-}
-
-.the_drum {
+#music song2 {
   float: left;
   margin: 0px;
 }
 
-.youtube_img {
-  width: 1000px; /*왜 900이면 안 되지*/
-  margin: 0 auto;
-}
-
-.youtube_img::after {
-  clear: left; /*따라오지 않게 무력화시킴*/
-}
-
-.broken-m,
-.flower-m,
-.dice-m {
-  float: left;
-}
-
-.the_drum-m {
-  float: left;
-  margin: 0px;
-}
-
+.youtube_img,
 .music_info {
-  width: 910px; /*왜 900이면 안 되지*/
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  border: 1px;
 }
 
-.music_info::after {
-  content: "";
-  clear: both; /*따라오지 않게 무력화시킴*/
-  display: block;
+.song {
+  width: 200px;
+  text-align: center;
 }
 
 .finish {
+  margin-bottom: 100px;
+  margin-top: 100px;
   text-align: center;
 }
