@@ -7,18 +7,22 @@ body {
   background-color: aquamarine;
 }
 
+.whole-container {
+  display: flex;
+  justify-content: center;
+  margin: 150px auto;
+}
+
 .white-container {
-  display: inline-block;
   background-color: pink;
   border-radius: 20px;
   padding: 10px;
   width: fit-content;
   height: auto;
   display: grid;
-  grid-template-columns: 300px 670px 300px;
+  grid-template-columns: 300px 670px;
   grid-template-rows: 50px auto;
   column-gap: 10px;
-  margin: 80px auto;
 }
 
 .divtoday {
@@ -75,13 +79,14 @@ body {
   margin: auto;
 }
 
-.name {
+.namebox {
   margin-bottom: 0px;
 }
 
 .email {
   margin-top: 0px;
   color: orange;
+  font-size: small;
 }
 
 .check {
@@ -94,6 +99,8 @@ body {
   margin: 10px auto;
   width: 250px;
   border: 1px solid gray;
+  font-size: small;
+  width: 250px;
 }
 
 /* .feel {
@@ -151,21 +158,49 @@ hr {
 }
 
 .music {
-  display: inline-block;
   margin: 0px;
   display: flex;
   flex-direction: column;
   width: 300px;
   height: fit-content;
-  background-color: white;
+  background-color: #eeeeee;
   border-radius: 20px;
 }
 
 .music > img {
-  width: 300px;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.music > audio {
-  display: inline-block;
+#today-blue {
+  color: deepskyblue;
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+}
+
+.fontred {
+  color: red;
+  font-size: xx-large;
+}
+
+hr {
+  width: 250px;
+  border-width: 1px;
+  border-style: solid;
+  color: gray;
+}
+
+#name {
+  color: blue;
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
+}
+
+#birth {
+  font-size: small;
+  color: gray;
+}
+
+#year {
+  color: orangered;
 }
