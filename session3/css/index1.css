@@ -22,7 +22,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 30px;
 }
 
 nav a {
@@ -89,10 +89,52 @@ section h1 {
   margin-bottom: 150px;
 }
 
+.tit {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
 .exp {
-  padding-top: 50px;
+  padding-top: 100px;
+  margin-bottom: 150px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 102%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .exp p {
   text-align: center;
   padding-top: 5px;
+  word-wrap: break-word;
+}
+
+.tmi {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tmi div {
+  flex-basis: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tmi div img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tmi div h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.tmi div p {
+  margin-bottom: 0;
 }
