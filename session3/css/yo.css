@@ -8,16 +8,12 @@ body {
     padding: 0;
     font-family: 'Dongle', sans-serif;
     background-color: ivory;
+    width: 1500px;
 }
 
 a:link, a:visited {
     text-decoration: none;
     color: blueviolet;
-}
-
-.box1 {
-    text-align: center;
-    margin: 0 auto;
 }
 
 .container
@@ -27,7 +23,46 @@ a:link, a:visited {
     font-family: 'Jua', sans-serif;
     font-size: x-large;
 }
+
+.image {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-btn1 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poor Story', cursive;
+    font-size: large;
+    list-style-type: none;
+    margin: 0;
+}
+
+.box2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .nav-btn2 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Poor Story', cursive;
+    font-size: large;
+    list-style-type: none;
+}
+
+.box3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-btn3 {
     text-align: center;
     margin: 0 auto;
     font-family: 'Poor Story', cursive;
@@ -45,12 +80,12 @@ nav {
     line-height: 30px;
 }
 
-.nav-btn2 {
+.nav-btn3 {
     list-style-type: none;
     margin: 0;
 }
 
-ul.box1 > li {
+ul.nav-btn1 > li {
     float: none;
     margin: 25px;
 }
@@ -102,28 +137,29 @@ ul.nav-btn2 > li {
 /*section*/
 
 .sec {
+    padding: 75px;
+    width: auto;
     text-align: center;
-    padding: 200px;
-    margin: 0 auto;
 }
 
 .sec article {
-    float: left;
     width: 300px;
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin: 0 20px;
+    float: left;
+}
+.sec article card-img {
+    width: 100%;
+    height: auto;
 }
 
 .sec article:last-child {
     margin-right: 0;
 }
 
-.sec article card-img {
-    width: 100%;
-    height: auto;
-}
-
 .sec::after {
-    content: "";
+    content: ""; 
     display: "";
     clear: both;
 }
