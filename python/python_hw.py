@@ -171,15 +171,15 @@ while(True):
 print("[문제 4]")
 list = []
 
-ans = input('추가할 메뉴를 입력하세요.(추가 완료 시 ''완료''를 입력하세요.) ')
-list.append(ans)
-while(ans != '완료'):
-    print('메뉴판: ', end=''); print(list)
+while(True):
     ans = input('추가할 메뉴를 입력하세요.(추가 완료 시 ''완료''를 입력하세요.) ')
+    if ans == '완료':
+        break
     list.append(ans)
+    print(f'메뉴판: {list}')
 
-for i in range(1, len(list)):
-    print("%d번째 테이블에서 %s를 주문했습니다." %{i, list.pop()})
+for i in range(1, len(list)+1):
+    print(f"{i}번째 테이블에서 {list.pop()}를 주문했습니다.")
     
 
 """
@@ -215,6 +215,18 @@ random.choice(hint)
 ### 문제 5-1 답안 (이 아래에 적어주세요!)
 print("[문제 5-1]")
 
+import random
+
+list_mbti = []
+mbti = ['ISTJ', 'ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP','ESTP','ESFP','ENFP','ENTP','ESTJ','ESFJ','ENTJ']
+
+
+def make_mbti():
+    for i in range(0, 200):
+        list_mbti.append(random.choice(mbti))
+        print(f'{i+1}번째 사람의 mbti: {list_mbti[i]}')
+
+make_mbti()
 
 
 
@@ -232,8 +244,15 @@ print("[문제 5-1]")
 ### 문제 5-2 답안 (이 아래에 적어주세요!)
 print("[문제 5-2]")
 
+dic_mbti = {}
 
+def make_dic():
+    for i in range(0, len(list_mbti)):
+        dic_mbti[list_mbti[i]] = list_mbti.count(list_mbti[i])
 
+make_dic()
+
+print(dic_mbti)
 
 """
 ##### 문제 5-3 #####
@@ -244,3 +263,9 @@ mbti 유형을 딕셔너리의 key로 입력했을 경우, value로 몇 명이 �
 """
 ### 문제 5-3 답안 (이 아래에 적어주세요!)
 print("[문제 5-3]")
+
+def find_mbti():
+    mbti_ans = input("어떤 mbti를 검색하시겠습니까?").upper()
+    print(f'{mbti_ans}는 {dic_mbti[mbti_ans]}명')
+
+find_mbti()
