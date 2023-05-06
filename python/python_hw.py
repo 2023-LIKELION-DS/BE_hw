@@ -169,6 +169,8 @@ while(True):
 """
 ### 문제4 답안 (이 아래에 적어주세요!)
 print("[문제 4]")
+import random
+
 list = []
 
 while(True):
@@ -178,8 +180,8 @@ while(True):
     list.append(ans)
     print(f'메뉴판: {list}')
 
-for i in range(1, len(list)+1):
-    print(f"{i}번째 테이블에서 {list.pop()}를 주문했습니다.")
+for i in range(0, random.randrange(0,10)):
+    print(f"{random.randrange(1,7)}번째 테이블에서 {list[random.randrange(0, len(list))]}를 주문했습니다.")
     
 
 """
