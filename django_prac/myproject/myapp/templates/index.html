@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTE-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initioal-scale=1.0" />
+    <title>DOCTYPE</title>
+  </head>
+  <body>
+    Hello World!
+    <br />
+    <h1>사용자의 이름을 입력해주세요.</h1>
+    <form action="{% url 'hello' %}">
+      <!-- <textarea name="username" cols="40" rows="1"></textarea> -->
+      <input name="username" type="text" />
+      <input type="submit" value="제출" />
+    </form>
+    <br />
+    <a href="{% url 'wordCount' %}">wordCount 실습</a>
+  </body>
+</html>
