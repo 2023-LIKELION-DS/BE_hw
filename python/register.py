@@ -29,6 +29,7 @@ while True:
     user = {}
 
     username = input('ID: ')
+    
     while True:
         password = input('PW: ')
         password_confirm = input('PW 확인: ')
@@ -36,8 +37,9 @@ while True:
             break
         else:
             print('패스워드가 일치하지 않습니다.')
-      
+
     name = input('이름: ')
+
     while True:
         birth_date = input('생년월일(6자리): ')
         if len(birth_date) == 6:
