@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>방명록 목록~~~~</h1>
+  {% for b in books %}
+    <li>{{b.title}} - {{b.author}} ({{b.datetime}})</li>
+  {% empty %}
+    <li>방명록이 없습니다~</li>
+  {% endfor %}
+</body>
+</html>

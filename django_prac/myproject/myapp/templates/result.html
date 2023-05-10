@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>당신이 입력한 텍스트는 {{word_length}} 단어로 구성되어 있습니다.</h1>
+    <h1>입력한 텍스트 :</h1>
+    {{alltext}}
+    <br />
+    <h1>단어 카운트 :</h1>
+    {% for w, f in dictionary %} {{w}} : {{f}}
+    <br />
+    {% endfor %}
+    <a href="{% url 'wordCount' %}">다시하기</a>
+  </body>
+</html>
