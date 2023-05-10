@@ -41,7 +41,6 @@ for food in foods:
 
 
 
-
 """ 
 ##### 문제 3 #####
 
@@ -128,43 +127,150 @@ while True:
 
 추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): 튀김
 메뉴판:  ['순대', '튀김']
-... (86줄 남음)
+
+추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): 라면
+메뉴판:  ['순대', '튀김', '라면']
+
+추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): 김밥
+메뉴판:  ['순대', '튀김', '라면', '김밥']
+
+추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): 떡볶이
+메뉴판:  ['순대', '튀김', '라면', '김밥', '떡볶이']
+
+추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): 완료
+
+1번째 테이블에서 김밥를 주문했습니다.
+2번째 테이블에서 김밥를 주문했습니다.
+3번째 테이블에서 떡볶이를 주문했습니다.
+
 """
+### 문제4 답안 (이 아래에 적어주세요!)
+print("[문제 4]")
+
 import random
-total_menus={}  #마지막에 한번에 테이블 번호:메뉴 리스트를 출력하기 위해 딕셔너리 생성
-table_num=[]  #중복되지 않는 테이블 리스트
+#total_menus={}  #마지막에 한번에 테이블 번호:메뉴 리스트를 출력하기 위해 딕셔너리 생성
+#table_num=[]  #중복되지 않는 테이블 리스트
 
-tables=random.randrange(1,7)  #몇개의 테이블에서 주문을 받을 것인지 렌덤으로.
-print("총 %d개의 테이블에서 주문을 받겠습니다."%tables)
-for num in range(tables):
-    menus=[]
-    menus_not_d=[]
+#tables=random.randrange(1,7)  #몇개의 테이블에서 주문을 받을 것인지 렌덤으로.
+#print("총 %d개의 테이블에서 주문을 받겠습니다."%tables)
+#for num in range(tables):
+#    menus=[]
+#    menus_not_d=[]
     
-    while True:
+#    while True:
         
-        random_table_num=random.randrange(1,7)  #몇번 테이블에서 주문을 받을 것인
-        if random_table_num not in table_num:
-            table_num.append(random_table_num)
-            break
+#        random_table_num=random.randrange(1,7)  #몇번 테이블에서 주문을 받을 것인
+#        if random_table_num not in table_num:
+#            table_num.append(random_table_num)
+#            break
         
-    while True:
+#    while True:
         
-        print(table_num[num],"번 테이블")
-        menu=input("추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): ")
+#        print(table_num[num],"번 테이블")
+#        menu=input("추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.): ")
 
-        if menu=="완료":
-            for i in range(len(menus)):
+#        if menu=="완료":
+#            for i in range(len(menus)):
             
-                m=menus[random.randrange(len(menus))]
-                while m in menus_not_d:
-                    m=menus[random.randrange(len(menus))]
-                menus_not_d.append(m)
-            print(menus_not_d)
-            break
+#                m=menus[random.randrange(len(menus))]
+#                while m in menus_not_d:
+#                    m=menus[random.randrange(len(menus))]
+#                menus_not_d.append(m)
+#            print(menus_not_d)
+#            break
 
-        menus.append(menu)
-        print("메뉴판: ",menus)
+#        menus.append(menu)
+#        print("메뉴판: ",menus)
 
-    total_menus["%s번 테이블"%table_num[num]]=menus_not_d
+#    total_menus["%s번 테이블"%table_num[num]]=menus_not_d
         
-print(total_menus)
+#print(total_menus)
+menu_list=[]
+while True:
+    menu=input("추가할 메뉴를 입력하세요.(추가 완료 시 '완료'를 입력하세요.):")
+    if menu=="완료":
+        break
+    menu_list.append(menu)
+table=random.randrange(1,7)
+for i in range(0,table):
+    index=random.randrange(0,len(menu_list))
+    print(i+1,"번째 테이블에서 %s를 주문했습니다."%menu_list[index])
+
+"""
+##### 문제 5-1 #####
+
+mbti의 검사결과는 아래와 같이 16가지 유형이 있다.
+'ISTJ'
+'ISFJ'
+'INFJ'
+'INTJ'
+'ISTP'
+'ISFP'
+'INFP'
+'INTP'
+'ESTP'
+'ESFP'
+'ENFP'
+'ENTP'
+'ESTJ'
+'ESFJ'
+'ENTJ'
+
+이때, 200명의 mbti 검사결과를 random 하게 만드는 함수를 작성해보세요
+
+출력 조건) 200명의 검사 결과는 list로 담는다
+힌트) 문자열을 랜덤하게 출력하는 코드는 아래와 같습니다.
+import random
+
+hint = "ABCDEFGH"
+random.choice(hint)
+
+"""
+### 문제 5-1 답안 (이 아래에 적어주세요!)
+print("[문제 5-1]")
+mbti=['ISTJ','ISFJ','INFJ','INTJ','ISTP','ISFP','INFP','INTP','ESTP','ESFP','ENFP','ENTP','ESTJ','ESFJ','ENTJ']
+person_mbti=[]
+for i in range(200):
+    person_mbti.append(random.choice(mbti))
+print(person_mbti)
+
+
+
+
+
+"""
+##### 문제 5-2 #####
+
+200명의 검사 결과가 각 16가지의 유형별 몇 명이 있는지 구하기
+
+출력 조건) 딕셔너리 형식( {'mbti유형': 총 명수})
+출력 예시) {'ESFP':17, 'INFJ': 13...}
+힌트) 각각의 mbti 유형을 세는 법(counting)을 생각해보자.
+
+"""
+### 문제 5-2 답안 (이 아래에 적어주세요!)
+print("[문제 5-2]")
+dict={}
+for i in mbti:
+    dict[i]=person_mbti.count(i)
+
+print(dict)
+    
+
+
+
+"""
+##### 문제 5-3 #####
+
+mbti 유형을 딕셔너리의 key로 입력했을 경우, value로 몇 명이 해당 mbti에 속해있는지 출력하는 함수를 작성
+출력 조건) 알파벳 입력시 대,소문자는 결과에 영향을 미치지 않도록 코드를 작성할 것
+
+"""
+### 문제 5-3 답안 (이 아래에 적어주세요!)
+print("[문제 5-3]")
+def find_mbti(mbti):
+    print(mbti,"는 %d명 있습니다."%dict[mbti])
+
+find=input("찾고자 하는 mbti 인원 : ")
+upper_find=find.upper()
+find_mbti(upper_find)
