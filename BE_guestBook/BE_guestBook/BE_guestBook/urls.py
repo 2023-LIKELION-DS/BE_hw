@@ -21,4 +21,10 @@ from guest_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name = "index"),
+    path('class/', views.class_view.as_view()),
 ]
+
+
+#index --> 미니홈피 메인화면 
+#방명록 창 연결
+#footer.html 메인과 방명록 하단 추가 
