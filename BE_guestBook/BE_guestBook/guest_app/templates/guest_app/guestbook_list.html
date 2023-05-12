@@ -1,0 +1,9 @@
+{% extends 'guest_app/base.html' %}
+{% block content %}
+  <h1>방명록 목록~~~~</h1>
+  {% for b in guestbook_list %}
+    <li>{{b.title}} - {{b.author}} ({{b.datetime}})</li>
+  {% empty %}
+    <li>방명록이 없습니다~</li>
+  {% endfor %}
+{% endblock %}
