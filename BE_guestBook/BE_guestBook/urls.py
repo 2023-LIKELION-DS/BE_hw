@@ -22,8 +22,8 @@ from guest_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index"),
+    path('', views.index),
     #path('guestspp/', views.guest_list, name="guest_list"),  #mainview 아무데도 연결안하면
     #path("guestapp/",views.GuestList.as_view()),
-    path('guestapp/', include('guest_app.urls', namespace='posts')),
+    path('guestapp/', include('guest_app.urls')),
 ]

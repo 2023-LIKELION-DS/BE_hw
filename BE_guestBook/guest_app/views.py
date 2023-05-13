@@ -16,4 +16,3 @@ def guest_list(request):
 
 def index(request):
     return render(request, "index.html")
-
