@@ -15,10 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from guest_app import views
+
+#from guest_app.views import index, guest_list
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index")
+    path('', views.index, name="index"),
+    #path('guestspp/', views.guest_list, name="guest_list"),  #mainview 아무데도 연결안하면
+    #path("guestapp/",views.GuestList.as_view()),
+    path('guestapp/', include('guest_app.urls', namespace='posts')),
 ]
