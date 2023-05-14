@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
-{% block title %}싱세{% endblock %}
+{% block title %}글 상세{% endblock %}
 
 {% block content %}
 <h1>Post 상세 화면</h1>
-{% include 'mixin/posts/post_card.html' %}
+{% include 'mixin/posts/post_card.html' with detail=True %}<!--변수생성-->
 {% endblock %}
+<!--햐냐의 데이터이기 때문에 반복이 필요 없다!
+include할 필요 없음 이미 post에서 가지고 있음
+그러나 상세 화면에 갔을 경우 더보기 필요 없-->
+
