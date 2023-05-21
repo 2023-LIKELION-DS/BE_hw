@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import GuestBook
+from models import GuestBook
 
 # Create your views here.
 def index(request):
