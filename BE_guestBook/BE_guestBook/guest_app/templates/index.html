@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>미니홈피</title>
   </head>
   <body>
-    <h1>방명록 목록 (❁´◡`❁)</h1>
-    <u1>
-      {% for book in books %}
-      <li>{{ book.title }} - {{ book.author }} ({{ book.datetime }})</li>
-      {% empty %}
-      <li>방명록이 없습니다.·´¯`(>▂<)´¯`·.</li>
-      {% endfor %}
-    </u1>
+    <h1>환영합니다</h1>
+    <h2>여기는 아름다운 미니홈피</h2>
+    <a href="{% url 'guest_app:guestbook-list' %}">방명록 바로가기</a>
+    {% include 'guest_app/footer.html' %}
   </body>
 </html>
