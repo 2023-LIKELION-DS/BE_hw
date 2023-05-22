@@ -7,16 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="/fbv/">새로고침</a><br>
-
-    <form action="" method="GET">
-        <input type="text" name="var">
-        <input type="submit" value="GET 제출">
-    </form>
-
-    <form action="" method="GET"> {% csrf_token %}
-        <input type="text" name="var">
-        <input type="submit" value="POST 제출">
-    </form>
+    <h1>List Page </h1>
+    {% for object in object_list %}
+        {{ object }}
+    {% endfor %}
 </body>
 </html>
