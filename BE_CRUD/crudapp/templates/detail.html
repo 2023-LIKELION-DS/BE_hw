@@ -11,6 +11,9 @@
     <h3>제목: {{todo.title}}</h3></a>
     <p>내용 : {{todo.content}}</p>
     <p>생성시간 : {{todo.date}}</p>
+    <a href="{% url 'update' todo.pk %}"><button>수정하기</button></a>
+    <a href="{% url 'delete' todo.pk %}"><button>삭제하기</button></a>
+    <a href="{% url 'index' %}"><button>홈으로</button></a>
     <br><br><br>
 </body>
 </html>

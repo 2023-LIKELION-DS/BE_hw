@@ -21,3 +21,19 @@ def create(request):
 def detail(request, id):
     todo = get_object_or_404(Index, pk=id)
     return render (request, "detail.html", {"todo": todo})
+
+def update(request,id):
+    update_todo = get_object_or_404(Index, pk=id)
+    if request.method =="POST":
+        update_todo.title = request.POST.get("title")
+        update_todo.content = request.POST.get("content")
+        update_todo.date = request.POST.get("date")
+        update_todo.save()
+        return redirect("detail", update_todo.pk)
+    return render(request, "update.html", {"update_todo":update_todo})
+
+def delete(request, id):
+    delete_todo = get_object_or_404(Index, pk=id)
+    delete_todo.delete()
+    return redirect("index")
+
