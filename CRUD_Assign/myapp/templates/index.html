@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}  <!--확장할때는 extend-->
+
+{% block title %}홈{% endblock %}
+
+{% block main-page %}
+<h1>게시판</h1>
+<a href="{% url 'create' %}"><button>새 글 등록</button></a><br><Br>
+<hr>
+{% if my_show %}
+    {% for show in my_show %}
+        <a href="{% url 'detail' show.id %}"><h3>{{show.title}}</h3></a>
+        <p>{{show.content}}</p>
+        <p>{{show.date}}</p>
+        {% for n in show.comment %}
+            <small>{{n}}</small>
+        {% endfor %}
+        <a href="{% url 'create_comment' show.id %}"><button>답글달기</button></a>
+        <hr>
+    {% endfor %}
+{% else %}
+        <p>게시판 비어있음</p>
+{% endif %}
+{% endblock %}

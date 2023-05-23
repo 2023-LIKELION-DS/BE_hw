@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}댓글추가{% endblock %}
+
+{% block main-page %}
+<form action="{% url 'create_comment' comment_show.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="comment">
+    <input type="submit" value="등록하기">
+
+</form>
+{% endblock %}
