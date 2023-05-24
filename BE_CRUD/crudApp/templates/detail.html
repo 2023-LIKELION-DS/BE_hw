@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <p>게시물 번호: {{todo.pk}}</p>
+    <h3>제목: {{todo.title}}</h3>
+    <p>내용: {{todo.content}}</p>
+    <p>생성 시간: {{todo.date}}</p>
+    <a href="{% url 'crudApp:update' todo.pk %}"><button>수정하기</button></a>
+    <a href="{% url 'crudApp:delete' todo.pk %}"><button>삭제하기</button></a>
+    <a href="{% url 'crudApp:index' %}"><button>홈으로</button></a>
+    <br><br><br>
+</body>
+</html>
