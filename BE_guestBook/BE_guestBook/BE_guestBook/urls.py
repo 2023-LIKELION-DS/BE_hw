@@ -1,26 +1,21 @@
-"""
-URL configuration for BE_guestBook project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from guest_app import views
-
+from guest_app.views import index
+# from django.urls import views, include, guestapp_list_view
+# from guest_app import viewspath
+# import  include path 
 
 # 실제 출력 링크  
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index")
+    
+    # path('', views.GuestList.as_view()),            # * 실습 1  
+    
+    # * 실습 2 사진 
+    path('', index, name="index"),
+    path('guestapp/', include('guest_app.urls')),  # main에서 guest url 클릭시 연결해줌 
+    
+    
 ]
+    # path('', views.GuestList, name="index"),
