@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>글 목록 조회</h2>
+  <a href="{% url 'create' %}"><button>새 글 등록</button></a>
+  {% for o in obj %}
+  <div>
+    <a href="{% url 'detail' o.pk %}"><p>{{o.title}}</p></a>
+    <p>{{o.content}}</p>
+    <p>{{o.date}}</p>
+  </div>
+  {% empty %}
+  <div>
+    게시글이 없습니다.
+  </div>
+  {% endfor %}
+</body>
+</html>
