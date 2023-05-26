@@ -55,7 +55,7 @@ ROOT_URLCONF = 'BE_guestBook.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],                                         # 수정한 부분 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
