@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>환영합니다</h1>
+{% block content%}
+<h1>환영합니다</h1>
   <h2>여기는 아름다운 미니홈피</h2>
   <a href="{% url 'view'%}">방명록 바로 가기</a>
-</body>
-</html>
+{% endblock %}
+{% include 'base.html' %}
