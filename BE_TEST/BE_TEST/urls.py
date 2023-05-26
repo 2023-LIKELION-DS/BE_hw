@@ -1,5 +1,5 @@
 """
-URL configuration for BE_guestBook project.
+URL configuration for BE_TEST project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,16 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from guest_app import views
+from django.urls import path,include
+from testApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name = "index"),
-    path('class/', views.class_view.as_view()),
+    path('',views.index, name="index"),
+    path('testApp/', include('testApp.urls')),
 ]
 
 
-#index --> 미니홈피 메인화면 
-#방명록 창 연결
-#footer.html 메인과 방명록 하단 추가 
+# 루트 url, include로 앱 url 연결 

@@ -7,13 +7,15 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>방명록 목록</h1>
-    <ul>
-      {% for book in books %}
-      <li>{{ book.title }} - {{ book.author }} ({{ book.datetime }})</li>
-      {% empty %}
-      <li>방명록이 없습니다.</li>
-      {% endfor %}
-    </ul>
+    <h1>글 목록</h1>
+    <br />
+    {% for obj in con %}
+    <a href="{% url 'detail' obj.pk %}"><h3>{{ obj.title }}</h3></a>
+    <h3>{{obj.date}}</h3>
+    <br /><br /><br />
+    {% endfor %}
+
+    <a href="{% url 'create' %}"><button>글 작성</button></a>
+    <br />
   </body>
 </html>
