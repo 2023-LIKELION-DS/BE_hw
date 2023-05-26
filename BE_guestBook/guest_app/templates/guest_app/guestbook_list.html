@@ -1,0 +1,12 @@
+
+{% block content %}
+    <h1>방명록 목록 ☆*: .｡. o(≧▽≦)o .｡.:*☆</h1>
+    <ul>
+      {% for book in guestbook_list %}
+      <li>{{book.title}} - {{book.author}} ({{book.datetime}})</li>
+      {% empty %}
+      <li>방명록이 없습니다(●'◡'●)</li>
+      {% endfor %}
+    </ul>
+{% endblock %}
+{% include 'base.html' %}
