@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a href="{% url 'create' %}"><button>새 글 등록</button></a>
+  {% for o in obj %}
+  <p>게시물 번호 {{o.pk}}</p>
+  <p>작성시간 {{o.date}}</p>
+  <a href="{% url 'detail' o.pk %}"><h3>제목 {{o.title}}</h3></a>
+  <p>내용 {{o.content}}</p>
+  <hr>
+  {% endfor %}
+</body>
+</html>
