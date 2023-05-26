@@ -1,0 +1,12 @@
+<!--* create 담당 페이지  -->
+
+<form action="{% url 'crudApp:create' %}" method="post">
+    {% csrf_token %}
+    <h1>Todo 등록</h1>
+    <label for="title">제목</label>
+    <input type="text" name="title" /> <br/> <br />
+
+    <label for="content">본문</label>
+    <textarea name="content" id="" cols="30" rows="10"></textarea>
+    <input type="submit" value="제출" />
+</form>
