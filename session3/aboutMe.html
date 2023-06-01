@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개</title>
+    <link href="./css/first.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Stylish&display=swap"
+    rel="stylesheet"
+    />
+    
+</head>
+<body>
+
+    <div class="background-img">
+
+        <nav class="my_nav">
+            <div class="container">
+                <h1 class="nav-logo">
+                    <a href="aboutMe.html"><i class="far fa-child"></i>7b은서</a>
+                </h1>
+                <!--왜 안 되냐-->
+                <div class="nav-menu">
+                    <ul class="nav-btn">
+                        <li><a href="#edu">EDUCATION & ACTIVITIES</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#photo">PHOTO</a></li>
+                        <li><a href="#tmi">TMI</a></li>
+                        <li><a href="#music">MUSIC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <header class="middle"> <!--이부분만 글이 내려가지 않음...-->
+        <div class="up">
+            <img src="./img/me.jpg" alt="사진" width="200px" height="350px" />
+        </div>
+        <div class="text-left">
+            <h2 >Kim Eunseo<sup><small>김은서</small></sup></h2>
+            <p>
+                <span>birth</span> 2003.04.03<br />
+                <span>major</span> 컴퓨터공학전공<br />
+                <span><i class="fab fa-instagram"></i> instagram</span>
+                @7b_eunseo<br />
+                <span>cel</span> 010-8230-2512<br />
+                <span>e-mail</span> kimes0403@gmail.com<br />
+                <span>MBTI</span> ISTP
+            </p>
+        </div>
+    </header>
+
+
+
+
+    <section>
+        <article class="enter">
+
+            <h3 id="edu"  >
+                <i class="fas fa-chart-line"> </i> <ins>EDUCATION & ACTIVITIES</ins>
+            </h3>
+
+            <table class="edu_table"> <!--border="1"필요 없나?-->
+                <thead>
+                    <tr>
+                        <th>Education</th>
+                        <th>Activities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>과천중학교 졸업</li>
+                                <li>과천고등학교 졸업</li>
+                                <li><span>덕성여자대학교 재학중</span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><span>덕성 멋사 11기 백앤드</span> 파트로 활동 중</li>
+                                <li>컴퓨터공학과 학생회 <span>connect 홍보국</span> 활동 중</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+  
+
+    <article class="main-skill">
+        <h3 id="skills"><i class="fas fa-disease"></i> <ins>SKILLS</ins></h3>
+        <div class="skill_language">
+        <div class="skill-page">
+
+                    <div  class="skill-icon" >
+                        <i class="fab fa-python"></i>
+                    </div>
+           
+                <div class="skill-range">
+                    40%<br />
+                    python<br />
+                    <progress max="100" value="40">40%</progress>
+                </div>
+            </div>
+        
+
+        <div class="skill-page"> <!--justify-content하는 방법 모르겠다..-->
+
+            <div  class="skill-icon">
+                <i class="far fa-file-code"></i>
+
+            </div>
+            <div class="skill-range">
+                30%<br />
+                HTML<br />
+                <progress max="100" value="30">30%</ㅔ>
+            </div>
+            </div>
+
+            <div class="skill-page">
+                <div class="skill-icon">
+                    <div  class="skill-icon">
+                        <i class="fas fa-copyright"></i>
+                    </div>
+                </div>
+                <div class="skill-range">
+                    40%<br />
+                    c<br />
+                    <progress max="100" value="40">40%</progress>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </article>
+</div>
+
+<h3 id="photo" ><i class="fas fa-camera-retro"></i>   <ins>PHOTO</ins></h3>
+<div class="all-img">
+<div class="myimg">
+
+<div class="first-line">
+<div class="me1">
+<img src="./img/me1.jpg" alt="사진없음" width="270" height="200">
+</div>
+<div class="me1">
+<img src="./img/me2.jpg" alt="사진없음" width="270" height="200">
+</div>
+</div>
+
+<div class="second-line">
+<div class="me2">
+<img src="./img/me3.jpg" alt="사진없음" width="270" height="200">
+</div>
+<div class="me2">
+<img src="./img/me4.jpg" alt="사진없음" width="270" height="200">
+</div>
+</div>
+</div>
+<div class="me-v">
+<video src="/img/live_me.mp4" alt="동영상 없음" controls loop muted width="270" height="405">
+</div>
+</div>
+</div>
+
+
+
+<h3 id="tmi" ><i class="far fa-comment"></i> <ins>TMI</ins></h3>
+<div class="tmi">
+<dl>
+    <dt>
+        전화번호
+    </dt>
+    <dd>
+        <p>제 전화번호를 쉽게 외우는 법은 010-8230(파리 30마리)-2512(이오~일리있어)</p>
+    </dd>
+    <dt>
+        Green is my favorit color but...
+    </dt>
+    <dd>
+        <p>
+            초록색을 제일 좋아하는데 퍼스널 컬러에서 초록색이 제일 안 어울리다고 나왔어요
+        </p>
+    </dd>
+    <dt>
+        계란 싫어해요
+    </dt>
+    <dd>
+        <p>맛이 없어요..</p>
+    </dd>
+</dl>
+</div>
+
+<article>
+    <h3 id="music"><i class="fas fa-music"></i> <ins>MUSIC</ins></h3>
+    <div class="youtube_img">'
+        <div class="song2">
+            <a href="https://youtu.be/qr1-WpWOUk8" target="_blank">
+                <img src="./img/youtube.jpg" alt="유튜브 사진" width="200px" height="200px"></a>
+        </div>
+        <div class="song2">
+            <a href="https://youtu.be/WQdFA55hT80" target="_blank">
+                <img src="./img/youtube.jpg" alt="유튜브 사진" width="200px" height="200px"></a>
+        </div>
+        <div class="song2">
+            <a href="https://youtu.be/p1bjnyDqI9k" target="_blank">
+            <img src="./img/youtube.jpg" alt="유튜브 사진" width="200px" height="200px"></a>
+        </div>
+        <div class="song2">
+            <a href="https://youtu.be/TicGJQqrq2M" target="_blanl">
+                <img src="./img/youtube.jpg" alt="유튜브 사진" width="200px" height="200px"></a>
+        </div>
+    </div>
+    <div class="music_info">
+        <div class="song">
+            <i class="fas fa-headphones-alt"></i>   Broken<br>-lovelytheband
+        </div>
+        <div class="song"> 
+            <i class="fas fa-headphones-alt"></i>   flowering<br>-LUCY
+        </div>
+        <div class="song">
+            <i class="fas fa-headphones-alt"></i>   Dice<br>-NMIXX
+        </div>
+        <div class="song">
+            <i class="fas fa-headphones-alt"></i>   The Drum<br>-Alen Walker
+        </div>
+    </div>
+
+    <footer class="finish">
+            <i class="far fa-heart"></i> the end <i class="far fa-heart"></i><br>
+            thank you
+    </footer>
+
+
+</article>
+</body>
+</html>

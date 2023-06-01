@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}메인페이지{% endblock %}
+
+{% block content %}
+<header>
+    <h3>환영합니다</h3>
+</header>
+<div>
+    <a href="{% url 'guest_list' %}">방명록 바로가기</a>
+</div>
+<div>
+    {% include 'guestapp/footer.html' %}
+</div>
+
+{% endblock %}

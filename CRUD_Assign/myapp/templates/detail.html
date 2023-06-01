@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}추가{% endblock %}
+
+{% block main-page %}
+<h1>제목 : {{detail_show.title}}</h1>
+<p>내용 : {{detail_show.content}}</p>
+<p>작성 시간 : {{detail_show.date}}</p>
+<a href="{% url 'update' detail_show.pk %}"><button>수정하기</button></a>
+<a href="{% url 'delete' detail_show.pk %}"><button>삭제하기</button></a>
+{% endblock %}

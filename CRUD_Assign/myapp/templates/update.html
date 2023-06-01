@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}추가{% endblock %}
+
+{% block main-page %}
+
+<form action="{% url 'update' update_show.pk %}" method="POST">
+    {% csrf_token %}
+    제목 : <input type="text" name="title" value="{{update_show.title}}"><br><Br>
+    내용 : <textarea cols="30" name="content" rows="10">{{update_show.content}}</textarea><br><br>
+    <button type="submit">전송</button>
+
+</form>
+{% endblock %}
