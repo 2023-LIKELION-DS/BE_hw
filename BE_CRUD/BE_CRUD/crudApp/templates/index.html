@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>이규민의 Todo List</h1>
+  <a href="{% url 'crudApp:create' %}"><button>새 글 등록</button></a>
+  <hr>
+  {% for obj in todo %}
+  <p>게시물 번호: {{obj.pk}}</p>
+  <a href="{% url 'crudApp:detail' obj.pk %}"><h3>제목: {{obj.title}}</h3></a>
+  <br><br><br>
+  {% endfor %}
+</body>
+</html>
