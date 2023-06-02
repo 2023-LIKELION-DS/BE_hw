@@ -1,0 +1,8 @@
+<form action="{%url 'crudApp:create' %}" method="POST">
+    {% csrf_token %}
+    <label for="title">제목</label>
+    <input type="text" name="title" /><br/><br/>
+    <label for="content">본문</label>
+    <textarea name="content" id="" cols="30" rows="10"></textarea><br/>
+    <input type="submit" value=제출 />
+</form>

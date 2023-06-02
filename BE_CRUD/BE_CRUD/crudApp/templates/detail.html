@@ -1,0 +1,10 @@
+<body>
+    <p>게시물 번호: {{todo.pk}}</p>
+    <h3>제목:{{todo.title}}</h3></a>
+    <p>내용:{{todo.content}}</p>
+    <p>생성 시간:{{todo.date}}</p>
+    <a href = '{% url 'crudApp:update' todo.pk %}'><button>수정하기</button></a>
+    <a href = '{% url 'crudApp:index' %}'><button>홈으로</button></a>
+    <a href = '{% url 'crudApp:delete' todo.pk %}'><button>삭제하기</button></a>
+    <br><br><br>
+</body>

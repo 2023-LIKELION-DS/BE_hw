@@ -1,5 +1,5 @@
 """
-URL configuration for BE_guestBook project.
+URL configuration for BE_CRUD project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,11 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from guest_app import views
-from guest_app.views import *
+from crudApp import views
+from crudApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index"),
-    path('guestapp/', include('guest_app.urls')),
+    path('', include('crudApp.urls')),
 ]

@@ -1,0 +1,10 @@
+<h1>함요영의 TodoList</h1>
+<a href = "{% url 'crudApp:create' %}"><button>새 글 등록</button></a>
+<hr>
+<body>
+    {%for obj in todo%}
+    <p>게시물 번호: {{obj.pk}}</p>
+    <a href="{% url 'crudApp:detail' obj.pk %}"><h3>제목:{{obj.title}}</h3></a>
+    <br><br><br>
+    {%endfor%}
+</body>
