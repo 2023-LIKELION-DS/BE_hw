@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글 목록 조회 페이지 </title>
+</head>
+<body>
+    <h1> 글 목록 </h1>
+
+    {% for obj in todo %}
+    <!-- * 게시글 제목과 해당 정보 연결 페이지  -->
+        <a href="{% url 'testApp:detail' obj.pk %}"><h3>{{obj.title}}</h3></a> <br/>
+
+    <!-- * 게시글 등록 날짜 노출 -->
+        <h3> {{obj.date}} </h3>
+
+        <br/><br/><br/>
+    {% endfor %}
+
+    <!-- * 새로 글 작성 링크 -->
+    <a href=  "{% url 'testApp:create' %}"  >
+        <button> 글 작성 </button>
+    </a>
+
+
+</body>
+</html>
